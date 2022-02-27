@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container-main{
+    width: 100%;
+    height: 100px;
+    background-image: url('https://media.istockphoto.com/photos/female-owner-of-start-up-coffee-shop-or-restaurant-turning-round-open-picture-id1226418360?b=1&k=20&m=1226418360&s=170667a&w=0&h=bzKXJN0gdyPs_6HVBxAr2H0f-FH7asza503BvPQMQtQ=');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+/*
+button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /* sombraas  
+      box-shadow: 20px 20px 15px #000;
+    transition: 0.5s;
+    
+    * }
+/
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
+}
+*/
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container-main-tarjetas{
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tarjeta-chocolate{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+}
+/* .tarjeta-chocolate:hover{
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
+} */
+
+.img-choco{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+.tarjeta--fresa{
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:2000px) {
+    .tarjeta-chocolate{
+        width: 500px;
+    }
+    .img-choco{
+        height: 300px;
+    }
+    .container-main{
+        height: 700px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    
+    button{
+        width: 200px;
+    }
+    .container-main{
+        height: 600px;
+        background-image: url('https://media.istockphoto.com/photos/female-owner-of-start-up-coffee-shop-or-restaurant-turning-round-open-picture-id1226418360?b=1&k=20&m=1226418360&s=170667a&w=0&h=bzKXJN0gdyPs_6HVBxAr2H0f-FH7asza503BvPQMQtQ=');
+    }
+    .btn-inicio{
+        position: absolute;
+        top: -100px;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+    
