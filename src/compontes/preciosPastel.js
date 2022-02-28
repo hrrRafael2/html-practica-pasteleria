@@ -7,7 +7,7 @@ const cantidadPaas = Vue.createApp({
             count: 0,
             precio: 120,
             name:'Pastel de chocolate',
-
+            showModal: false,
         }
     },
     methods: {
@@ -22,5 +22,26 @@ const cantidadPaas = Vue.createApp({
     
 })
 
-cantidadPaas.mount('.btn-add')
 
+
+/**  chocolate - 2 */
+
+const cantidadPaas2 = Vue.createApp({
+    data () {
+        return {
+            nombre:'Pastel de chocolate con frutas',
+            cantidad:  10,
+            count: 0,
+            precio: 200,
+        }
+    },
+    methods: {
+        contadorVentasFrutas() {
+            return this.count > 9 ? this.count = 0 :   'TENEMOS SOLO 10 PIEZAS'
+            
+        },
+    }
+})
+
+cantidadPaas2.mount('#card-chocol-2')
+cantidadPaas.mount('.btn-add')
