@@ -115,6 +115,7 @@ h1{
 }
 
 footer{
+    width: 100%;
     margin-top: 70px;
     background-color: rgb(250, 99, 99);
     height: 400px;
