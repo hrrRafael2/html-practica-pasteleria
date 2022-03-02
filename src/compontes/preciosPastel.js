@@ -44,22 +44,91 @@ const cantidadPaas2 = Vue.createApp({
 
 cantidadPaas2.mount('#card-chocol-2');
 
-/** 
- * const precioF = Vue.createApp({
-    components: {
-        cantidadPaas,
-        cantidadPaas2
+const nuevoPastelNuez = Vue.createApp({
+    data () {
+        return {
+            nombreNuez:'Pastel de chocolate con nuez',
+            cantidad:  30,
+            count: 0,
+            precio: 200,
+        }
     },
     methods: {
-        calcularPrecioFinal() {
-            return  this.cantidadPaas2
+        calcularPrecioNuez(){
+            const v = this.count * this.precio
+            return this.count > 0  ? v : 'Procesando...'
+        },
+        disminuirCantidad() {
+            return this.count > this.cantidad  ? this.count = 0 : 'TENEMOS SOLO 30 PIEZAS'
         }
     }
 })
 
-precioF.mount('#precioFinal')
+nuevoPastelNuez.mount('#card-chocol-3');
 
- * 
- * 
-  */
+const nuevoPastelCafe = Vue.createApp({
+    data () {
+        return {
+            nombreCafe:'Pastel de chocolate con cafe',
+            cantidad:  10,
+            count: 0,
+            precio: 250,
+            
+        }
+    },
+    methods: {
+        calcularPrecioNuez(){
+            const v = this.count * this.precio
+            return this.count > 0  ? v : 'Procesando...'
+        },
+        disminuirCantidad() {
+            return this.count > this.cantidad  ? this.count = 0 : 'TENEMOS SOLO 30 PIEZAS'
+        }
+    }
+})
 
+nuevoPastelCafe.mount('#card-chocol-4');
+
+const pastelTresLechesChoco = Vue.createApp({
+    data () {
+        return {
+            nombreTresLeches:'Pastel de chocolate con tres leches',
+            cantidad:  10,
+            count: 0,
+            precio: 400,
+        }
+    },
+    methods: {
+        calcularPrecioNuez(){
+            const v = this.count * this.precio
+            return this.count > 0  ? v : 'Procesando...'
+        },
+        disminuirCantidad() {
+            return this.count > this.cantidad  ? this.count = 0 : 'TENEMOS SOLO 30 PIEZAS'
+        }
+    }
+})
+
+pastelTresLechesChoco.mount('#card-chocol-5');
+
+const co = Vue.createApp({
+    data () {
+        return {
+            nombreTresLeches:' Pastel de almendra y chocolate al caramelo ',
+            cantidad:  10,
+            count: 0,
+            precio: 400,
+        }
+    },
+    methods: {
+        calcularPrecioNuez(){
+            const v = this.count * this.precio
+            return this.count > 0  ? v : 'Procesando...'
+        },
+        disminuirCantidad() {
+            return this.count > this.cantidad  ? this.count = 0 : 'TENEMOS SOLO 30 PIEZAS'
+        }
+    }
+})
+
+co.mount('#card-chocol-6');
