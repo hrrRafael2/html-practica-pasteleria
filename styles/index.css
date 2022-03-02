@@ -107,27 +107,31 @@ h1{
 }
 
 .footer-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
    padding: 20px;
 }
 
 footer{
     margin-top: 70px;
     background-color: rgb(250, 99, 99);
-    height: 300px;
+    height: 400px;
 }
 
-@media screen and (min-width:2000px) {
-    .tarjeta-chocolate{
-        width: 500px;
-    }
-    .img-choco{
-        height: 300px;
-    }
-    .container-main{
-        height: 700px;
-        width: 100%;
+
+
+@media screen and (min-width:1030px){
+    footer{
+        margin-top: 70px;
+        height: 250px;
+
+
     }
 }
+    
+
 
 
 @media screen and (max-width: 980px) {
