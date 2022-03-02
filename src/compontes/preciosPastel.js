@@ -1,5 +1,3 @@
-/**  */
-
 const cantidadPaas = Vue.createApp({
     data () {
         return {
@@ -22,10 +20,8 @@ const cantidadPaas = Vue.createApp({
     
 })
 
-
-
+cantidadPaas.mount('.btn-add');
 /**  chocolate - 2 */
-
 const cantidadPaas2 = Vue.createApp({
     data () {
         return {
@@ -40,8 +36,30 @@ const cantidadPaas2 = Vue.createApp({
             return this.count > 9 ? this.count = 0 :   'TENEMOS SOLO 10 PIEZAS'
             
         },
+        calcularPrecio2() {
+            return precioFinal = this.precio * this.count
+        }
     }
 })
 
-cantidadPaas2.mount('#card-chocol-2')
-cantidadPaas.mount('.btn-add')
+cantidadPaas2.mount('#card-chocol-2');
+
+/** 
+ * const precioF = Vue.createApp({
+    components: {
+        cantidadPaas,
+        cantidadPaas2
+    },
+    methods: {
+        calcularPrecioFinal() {
+            return  this.cantidadPaas2
+        }
+    }
+})
+
+precioF.mount('#precioFinal')
+
+ * 
+ * 
+  */
+

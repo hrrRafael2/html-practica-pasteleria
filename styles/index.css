@@ -97,7 +97,24 @@ h1{
     font-weight: bold;
     margin-top: 12px;
 }
+#ubicacion{
+    margin-top: 200px;
+    width: 100%;
+    height: 100px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-main{
+   padding: 20px;
+}
+
+footer{
+    margin-top: 70px;
+    background-color: rgb(250, 99, 99);
+    height: 300px;
+}
 
 @media screen and (min-width:2000px) {
     .tarjeta-chocolate{
